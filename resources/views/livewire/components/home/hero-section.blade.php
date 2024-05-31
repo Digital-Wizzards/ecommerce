@@ -1,6 +1,6 @@
 <div>
     <div class="bg-[#f9f3ec] flex items-center justify-center min-h-[50rem] py-5">
-        <div>
+        <div class="flex items-center gap-8">
             <div class="max-w-[500px]">
                 <img src="{{ asset('images/dog.png') }}" alt="Dog" class="w-screen">
             </div>

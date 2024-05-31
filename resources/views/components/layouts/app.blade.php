@@ -21,6 +21,7 @@
 
     @livewire('components.navbar')
     {{ $slot }}
+    @livewire('components.footer')
 </body>
 
 </html>
