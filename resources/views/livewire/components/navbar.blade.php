@@ -1,4 +1,4 @@
-<div>
+<div x-data="{ cartOpen: false }">
     <nav class="flex grid-rows-3 justify-around py-3 items-center">
         <div>
             <img src="{{ asset('images/logo.png') }}" alt="Logo">
@@ -49,9 +49,11 @@
             <a href="">
                 <i class="fa-solid fa-heart"></i>
             </a>
-            <a href="">
+            <a href="" @click.prevent="cartOpen=true">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
         </div>
     </nav>
+
+    @livewire('components.cart')
 </div>
