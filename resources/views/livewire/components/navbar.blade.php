@@ -38,9 +38,9 @@
             </form>
         </div>
         <div class="flex gap-5">
-            <a href="">Home</a>
-            <a href="">Shop</a>
-            <a href="">Contact</a>
+            <a wire:navigate href="{{ route('home') }}">Home</a>
+            <a wire:navigate href="{{ route('shop') }}">Shop</a>
+            <a wire:navigate href="">Contact</a>
         </div>
         <div class="flex gap-6">
             <a href="">
