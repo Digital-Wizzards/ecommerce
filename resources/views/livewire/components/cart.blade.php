@@ -55,6 +55,7 @@
         </div>
     </div>
     <div class="mt-4">
-        <button class="bg-[#cdab74] rounded text-white font-bold px-4 py-3 border w-full">Checkout</button>
+        <a wire:navigate href="{{ route('checkout') }}"
+            class="bg-[#cdab74] rounded text-white font-bold px-4 py-3 border block text-center w-full">Checkout</a>
     </div>
 </div>
