@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Pages\Admin\Dashboard;
 use App\Livewire\Pages\Auth\Login;
 use App\Livewire\Pages\Auth\Register;
 use App\Livewire\Pages\Checkout;
@@ -15,3 +16,8 @@ Route::get('/checkout', Checkout::class)->name('checkout');
 Route::get('/payment', PaymentOption::class)->name('payment');
 Route::get('/login', Login::class)->name('login');
 Route::get('/register', Register::class)->name('register');
+
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/', Dashboard::class)->name('dashboard');
+});
